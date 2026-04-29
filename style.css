@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+body {
+  background-color: #f6f9fc;
+  font-family: Poppins;
+}
+h1 {
+  font-size: 38px;
+  color: white;
+  font-weight: 800;
+}
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.container {
+  width: 100%;
+  max-width: 500px;
+}
+.todo-container {
+  background: linear-gradient(135deg, #fa709a, #fee140);
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.input-container {
+  display: flex;
+  gap: 20px;
+}
+.input-container input {
+  padding: 8px 25px;
+  border-radius: 10px;
+  border: 1px solid gray;
+  font-size: 15px;
+  outline: none;
+}
+
+input:focus {
+  color: gray;
+}
+#addBtn {
+  padding: 8px 25px;
+  border: none;
+  border-radius: 10px;
+  background-color: #ff6f91;
+  color: white;
+  font-size: 15px;
+}
+.task-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+}
+.task-list li {
+  display: flex;
+  margin-bottom: 10px;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  gap: 10px;
+}
+.task-title {
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  width: 50%;
+}
+.btn-group {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  width: 50%;
+}
+.btn-group button {
+  padding: 8px 25px;
+  border: none;
+  background-color: #3a86ff;
+  color: white;
+  border-radius: 10px;
+  font-size: 15px;
+}
+.completed {
+  text-decoration: line-through;
+}
+@media screen and (max-width: 768px) {
+  .main {
+    height: 80vh;
+  }
+  .container {
+    max-width: 600px;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  .input-container input {
+    padding: 7px 18px;
+    border-radius: 8px;
+    font-size: 14px;
+  }
+  #addBtn {
+    padding: 7px 18px;
+    border-radius: 8px;
+    font-size: 14px;
+  }
+  .task-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .task-list li {
+    margin-bottom: 5px;
+  }
+  .btn-group {
+    justify-content: flex-start;
+    gap: 5px;
+    align-items: flex-start;
+    width: 100%;
+  }
+  .btn-group button {
+    padding: 5px 15px;
+    border: none;
+    background-color: #3a86ff;
+    color: white;
+    border-radius: 10px;
+    font-size: 15px;
+  }
+}

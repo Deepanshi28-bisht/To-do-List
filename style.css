@@ -111,9 +111,12 @@ input:focus {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    width: 100%;
   }
   .task-list li {
     margin-bottom: 5px;
+    justify-content: center;
+    align-items: center;
   }
   .btn-group {
     justify-content: flex-start;

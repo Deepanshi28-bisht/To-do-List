@@ -30,6 +30,9 @@ h1 {
 .input-container {
   display: flex;
   gap: 20px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 .input-container input {
   padding: 8px 25px;
@@ -53,8 +56,9 @@ input:focus {
 .task-list {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   width: 100%;
+  flex-wrap: wrap;
 }
 .task-list li {
   display: flex;
@@ -110,13 +114,15 @@ input:focus {
   .task-list {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
+    align-items: center;
     width: 100%;
   }
   .task-list li {
     margin-bottom: 5px;
     justify-content: center;
     align-items: center;
+    gap: 25px;
   }
   .btn-group {
     justify-content: flex-start;
@@ -125,11 +131,14 @@ input:focus {
     width: 100%;
   }
   .btn-group button {
-    padding: 5px 15px;
+    padding: 5px 10px;
     border: none;
     background-color: #3a86ff;
     color: white;
     border-radius: 10px;
-    font-size: 15px;
+    font-size: 12px;
+  }
+  .task-title{
+  font-size: 12px;
   }
 }

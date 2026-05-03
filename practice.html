@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="parent" id="main">
+      <div class="day" id="top">1</div>
+      <div class="day">2</div>
+      <div class="day">3</div>
+      <div class="day">4</div>
+    </div>
+    <ul class="language"></ul>
+  </body>
+  <script>
+    const parent = document.querySelector(".parent");
+    //  edit
+    const secondChild = document.querySelector(".parent .day:nth-child(2)");
+    const newLi = document.createElement("div");
+    newLi.textContent = "Manav";
+    secondChild.replaceWith(newLi);
+    // delete
+    const thirdChild = document.querySelector(".parent .day:nth-child(3)");
+    thirdChild.remove();
+    // create
+    const div = document.createElement("div");
+    parent.appendChild(div);
+    div.innerText = "child div";
+    div.style.backgroundColor = "red";
+    //   console.log(parent.children[1].innerHTML);
+    const addLanguage = (langName) => {
+      const li = document.createElement("li");
+      li.textContent = langName;
+      document.querySelector(".language").appendChild(li);
+    };
+    addLanguage("hindi");
+    addLanguage("Noida");
+
+    document.getElementById("main").addEventListener(
+      "click",
+      (e) => {
+        console.log("main///////", e);
+        e.stopPropagation;
+      },
+      false,
+    );
+    document.getElementById("top").addEventListener(
+      "click",
+      (e) => {
+        e.stopPropagation;
+      },
+      false,
+    );
+  </script>
+</html>

@@ -10,7 +10,6 @@ const renderTask = () => {
   itemArray.forEach((item, index) => {
     const list = document.createElement("li");
     list.innerHTML = `
-     
     <input type="checkbox" class="checkTask" ${item.isCompleted ? "checked" : ""} />
   <span class="task-title ${item.isCompleted ? "completed" : ""}">
     ${item.title}

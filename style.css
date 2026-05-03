@@ -53,6 +53,7 @@ input:focus {
   color: white;
   font-size: 15px;
 }
+
 .task-list {
   display: flex;
   flex-direction: column;
@@ -68,6 +69,7 @@ input:focus {
   list-style: none;
   gap: 10px;
 }
+
 .task-title {
   color: white;
   font-size: 18px;
@@ -114,15 +116,12 @@ input:focus {
   .task-list {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     width: 100%;
   }
   .task-list li {
     margin-bottom: 5px;
-    justify-content: center;
-    align-items: center;
-    gap: 25px;
+    gap: 15px;
+    
   }
   .btn-group {
     justify-content: flex-start;
@@ -140,5 +139,7 @@ input:focus {
   }
   .task-title{
   font-size: 12px;
+  width: 100%;
   }
+
 }
